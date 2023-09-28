@@ -26,12 +26,10 @@ rustc-hex = { workspace = true }
 thiserror = { workspace = true }
 
 # Bridge dependencies
-
 bp-header-chain = { workspace = true, default-features = true }
 bp-parachains = { workspace = true, default-features = true }
 bp-polkadot-core = { workspace = true, default-features = true }
 bp-relayers = { workspace = true, default-features = true }
-bridge-runtime-common = { workspace = true, default-features = true }
 
 equivocation-detector = { workspace = true }
 finality-grandpa = { workspace = true, default-features = true }
@@ -49,7 +47,6 @@ bp-runtime = { workspace = true, default-features = true }
 bp-messages = { workspace = true, default-features = true }
 
 # Substrate Dependencies
-
 frame-support = { workspace = true, default-features = true }
 frame-system = { workspace = true, default-features = true }
 pallet-balances = { workspace = true, default-features = true }
