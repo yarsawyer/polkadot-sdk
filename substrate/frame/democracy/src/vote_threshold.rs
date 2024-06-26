@@ -97,6 +97,9 @@ impl<
 		if sqrt_voters.is_zero() {
 			return false
 		}
+		if sqrt_electorate.is_zero() {
+			return false
+		}
 		match *self {
 			VoteThreshold::SuperMajorityApprove =>
 				compare_rationals(tally.nays, sqrt_voters, tally.ayes, sqrt_electorate),
